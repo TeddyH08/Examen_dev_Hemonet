@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'RadioCanada';
+    src: url("../../public/fonts/RadioCanada-Regular.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +11,25 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'RadioCanada';
+    font-size: 150%;
+}
+
+/* Liste des projets */
+
+.container_list_project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.container_cards_projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
