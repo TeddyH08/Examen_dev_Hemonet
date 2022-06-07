@@ -170,14 +170,22 @@ nav {
 /* Footer */
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #FFAD00;
     padding: 20px 0;
     color: #892C00;
+    font-size: 60%;
 }
 
 /* Responsive */
 
 @media screen and (max-width: 1025px) {
+    nav {
+        justify-content: right;
+    }
     .burger {
         display: flex;
         justify-content: flex-end;
