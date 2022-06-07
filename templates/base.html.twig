@@ -16,6 +16,46 @@
         {% endblock %}
     </head>
     <body>
+        {% block navbar %}
+        
+        {% endblock %}
+
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="{{ path('index') }}"><img src="" class="log">Examen</a>
+                </div>
+
+                <div id="nav" class="respon">
+                    <div class="menu">
+                        <ul>
+                            <li class="categorie dropdown">
+                                <a href="">Accueil</a>
+                            </li>
+
+                            <li class="categorie dropdown">
+                                <a href="">Liste des projets</a>
+                            </li>
+
+                            <li class="categorie dropdown">
+                                <a href="">Contactez-nous</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="burger" id="toggle-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
         {% block body %}{% endblock %}
+
+        {% block footer %}
+            <footer>
+                <h2>Footer</h2>
+            </footer>
+        {% endblock %}
     </body>
 </html>
