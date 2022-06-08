@@ -12,3 +12,5 @@ import './styles/app.css';
 import './bootstrap';
 
 import './js/responsive';
+
+import './js/back_to_top';
