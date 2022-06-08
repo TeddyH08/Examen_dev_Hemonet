@@ -185,6 +185,12 @@ nav {
     font-size: 75%;
 }
 
+.icone {
+    border-radius: 50%;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
 /* Contact */
 
 .container_contact {
@@ -384,11 +390,18 @@ i {
     .go_top:hover {
         background-color: #ba3b01;
     }
+    .icone:hover {
+        background-color: #FFAD00;
+    }
+    .connexion_redirect:hover {
+        text-decoration: underline;
+    }
 }
 
 /* Responsive */
 
-@media screen and (max-width: 1025px) {
+
+@media screen and (min-width: 721px) and (max-width: 1025px) {
     nav {
         justify-content: right;
     }
@@ -429,5 +442,23 @@ i {
     }
     .cards_projects {
         width: 35%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cards_projects {
+        width: 50% !important;
+        margin: 30px !important;
+    }
+    .contact_form {
+        flex-direction: column !important;
+    }
+    form {
+        width: 50% !important;
+        margin-bottom: 30px;
+    }
+    .map {
+        width: 50% !important;
+        margin-top: 30px;
     }
 }
