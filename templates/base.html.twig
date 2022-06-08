@@ -26,17 +26,17 @@
                     <div class="menu">
                         <div class="left_nav">
                             <div class="categorie dropdown">
-                                <a href="#">Accueil</a>
+                                <a href="{{ path('index') }}">Accueil</a>
                             </div>
 
                             <div class="categorie dropdown">
-                                <a href="#projets">Liste des projets</a>
+                                <a href="{{ path('index') }}#projets">Liste des projets</a>
                             </div>
                         </div>
 
                         <div class="right_nav">
                             <div class="categorie dropdown">
-                                <a href="#contact" class="contact">Contactez-nous</a>
+                                <a href="{{ path('index') }}#contact" class="contact">Contactez-nous</a>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,16 @@
             </nav>
         </header>
 
+        <div class="container_top_page">
+            <img src="{{ asset("img/bg_modif.jpg") }}" class="bg_top_page">
+
+            <div class="color_cache"></div>
+
+            <h1 class="title">Exercice d'examen 1</h1>
+        </div>
+
         {% block body %}{% endblock %}
+
 
         <a href="#" class="go_top"><i class="fa-solid fa-angle-up"></i></a>
 
@@ -99,7 +108,7 @@
             <div class="sepa"></div>
 
             <div class="copy">
-                <p>© 2022 Copyright: <a href="" class="connexion_redirect">HEMONET Teddy</a> | Tous droits Reservés | Mentions légales | Politique de confidentialité | CGV</p>
+                <p>© 2022 Copyright: <a href="{{ path('connexion') }}" class="connexion_redirect">HEMONET Teddy</a> | Tous droits Reservés | Mentions légales | Politique de confidentialité | CGV</p>
             </div>
         </footer>
 
